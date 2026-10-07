@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark">
+  <title>JavaScript Datatypes AI Tutor</title>
+  <style>
+    :root{--bg:#020617;--panel:#0f172a;--panel2:#111c33;--line:#26344d;--text:#e5eefc;--muted:#94a3b8;--cyan:#22d3ee;--blue:#0891b2;--violet:#8b5cf6;--green:#34d399;--red:#fb7185;--amber:#fbbf24;--radius:20px;--shadow:0 20px 50px rgba(0,0,0,.33)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh;background:radial-gradient(circle at 85% 0,#083344 0,transparent 32%),var(--bg);color:var(--text);font-family:Inter,Segoe UI,Arial,sans-serif}button,textarea{font:inherit}.app{width:min(1240px,calc(100% - 28px));margin:auto;padding:28px 0 45px}.hero{display:flex;justify-content:space-between;align-items:center;gap:24px;padding:30px;border:1px solid rgba(34,211,238,.22);border-radius:28px;background:linear-gradient(135deg,rgba(15,23,42,.96),rgba(8,51,68,.86));box-shadow:var(--shadow)}.badge{display:inline-flex;gap:8px;align-items:center;padding:7px 12px;border-radius:999px;background:rgba(34,211,238,.1);color:#a5f3fc;font-size:.86rem}.hero h1{font-size:clamp(2rem,6vw,4rem);line-height:1;margin:18px 0 12px}.hero h1 span{color:var(--cyan)}.hero p{max-width:720px;margin:0;color:#cbd5e1;line-height:1.65}.hero-icon{font-size:7rem;color:rgba(34,211,238,.5);font-family:Consolas,monospace}.types{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;margin:22px 0}.type-card,.card{border:1px solid var(--line);background:rgba(15,23,42,.94);border-radius:var(--radius);box-shadow:var(--shadow)}.type-card{padding:17px;transition:.2s}.type-card:hover{transform:translateY(-3px);border-color:#0e7490}.type-card h3{margin:0;color:#67e8f9}.type-card code{display:block;margin:11px 0;padding:8px;border-radius:9px;background:#020617;color:#fcd34d;overflow-wrap:anywhere}.type-card p{margin:0;color:var(--muted);font-size:.88rem}.layout{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(300px,.6fr);gap:20px}.card{padding:22px}.card h2{display:flex;align-items:center;gap:9px;margin:0 0 18px}.toolbar,.actions{display:flex;flex-wrap:wrap;gap:9px}.toolbar{margin-bottom:14px}.btn{border:1px solid #334155;border-radius:10px;padding:10px 14px;background:#020617;color:var(--text);cursor:pointer;transition:.18s}.btn:hover{border-color:var(--cyan);transform:translateY(-1px)}.btn.primary{border:0;background:var(--cyan);color:#042f3e;font-weight:800}.btn.violet{width:100%;border:0;background:var(--violet);font-weight:700}.notice{margin-bottom:14px;padding:12px;border:1px solid rgba(251,191,36,.24);border-radius:12px;background:rgba(251,191,36,.08);color:#fde68a;line-height:1.5}.editor{overflow:hidden;border:1px solid #334155;border-radius:15px;background:#020617}.editor-header{display:flex;justify-content:space-between;padding:9px 13px;border-bottom:1px solid #1e293b;color:#64748b;font-size:.78rem}.code-input{display:block;width:100%;min-height:325px;resize:vertical;border:0;outline:0;padding:16px;background:transparent;color:#6ee7b7;font:14px/1.65 Consolas,"Courier New",monospace;tab-size:2}.actions{margin-top:14px}.output{min-height:110px;margin:14px 0 0;padding:15px;white-space:pre-wrap;overflow:auto;border:1px solid #1e293b;border-radius:14px;background:#000;color:#cbd5e1;font:13px/1.6 Consolas,monospace}.side{display:grid;gap:20px;align-content:start}.answer{min-height:145px;padding:15px;border-radius:14px;background:rgba(139,92,246,.11);color:#ede9fe;line-height:1.6}.question{width:100%;min-height:92px;margin:12px 0;resize:vertical;border:1px solid #334155;border-radius:12px;outline:0;padding:12px;background:#020617;color:var(--text)}.question:focus{border-color:#a78bfa}.privacy{margin:9px 0 0;text-align:center;color:#64748b;font-size:.76rem}.quiz-option{display:flex;justify-content:space-between;width:100%;margin:8px 0;padding:12px;border:1px solid #334155;border-radius:11px;background:#020617;color:var(--text);cursor:pointer}.quiz-option:hover{border-color:var(--cyan)}.quiz-option.correct{border-color:var(--green);background:rgba(52,211,153,.09)}.quiz-option.wrong{border-color:var(--red);background:rgba(251,113,133,.09)}#quizFeedback{min-height:38px;color:var(--muted);font-size:.85rem;line-height:1.45}.footer{text-align:center;color:#64748b;font-size:.8rem;margin-top:25px}@media(max-width:960px){.types{grid-template-columns:repeat(2,1fr)}.layout{grid-template-columns:1fr}.hero-icon{display:none}}@media(max-width:560px){.app{width:min(100% - 18px,1240px);padding-top:10px}.hero,.card{padding:17px}.types{grid-template-columns:1fr}.hero h1{font-size:2.35rem}.btn{flex:1}.toolbar .btn{flex:1 1 135px}.code-input{min-height:290px;font-size:12px}}
+  </style>
+</head>
+<body>
+  <main class="app">
+    <header class="hero">
+      <div><div class="badge">✨ Τοπικό AI Learning App</div><h1>JavaScript <span>Datatypes</span></h1><p>Μάθε τους δυναμικούς τύπους δεδομένων με παραδείγματα, ζωντανό playground, τοπικό AI Tutor και mini quiz.</p></div>
+      <div class="hero-icon" aria-hidden="true">{ }</div>
+    </header>
+
+    <section class="types" id="types"></section>
+
+    <section class="layout">
+      <article class="card">
+        <h2>⌨ JavaScript Playground</h2>
+        <div class="toolbar" id="samples"></div>
+        <div class="notice"><strong>Σωστό παράδειγμα:</strong> <code>let x = 10; x = "John";</code><br>Η μεταβλητή δηλώνεται μία φορά. Η δεύτερη δήλωση <code>let x</code> στο ίδιο scope προκαλεί σφάλμα.</div>
+        <div class="editor">
+          <div class="editor-header"><span>main.js</span><span id="lineCount">0 γραμμές</span></div>
+          <textarea id="code" class="code-input" spellcheck="false" aria-label="Περιοχή κώδικα JavaScript"></textarea>
+        </div>
+        <div class="actions">
+          <button class="btn primary" id="runBtn">▶ Εκτέλεση</button>
+          <button class="btn" id="resetBtn">↻ Επαναφορά</button>
+          <button class="btn" id="copyBtn">▣ Αντιγραφή</button>
+        </div>
+        <pre class="output" id="output" aria-live="polite">Πάτησε Εκτέλεση για να δεις το αποτέλεσμα.</pre>
+      </article>
+
+      <aside class="side">
+        <article class="card">
+          <h2>🤖 AI Tutor</h2>
+          <div class="answer" id="answer" aria-live="polite">Γεια! Είμαι ο τοπικός AI Tutor σου. Ρώτησέ με για JavaScript datatypes.</div>
+          <textarea class="question" id="question" placeholder="Ρώτησε για typeof, null, arrays..." aria-label="Ερώτηση προς τον AI Tutor"></textarea>
+          <button class="btn violet" id="askBtn">✨ Ρώτησε τον Tutor</button>
+          <p class="privacy">Λειτουργεί τοπικά, χωρίς API, λογαριασμό ή αποστολή δεδομένων.</p>
+        </article>
+
+        <article class="card">
+          <h2>🧠 Mini Quiz</h2>
+          <p>Τι επιστρέφει το <code>typeof []</code>;</p>
+          <div id="quizOptions"></div>
+          <div id="quizFeedback" aria-live="polite"></div>
+        </article>
+      </aside>
+    </section>
+    <footer class="footer">JavaScript Datatypes AI Tutor • Single-file offline εφαρμογή</footer>
+  </main>
+
+  <script>
+    "use strict";
+    const typeData=[
+      ["String",'"Hello"',"Κείμενο"],["Number","42, 3.14, NaN","Αριθμοί"],["Boolean","true / false","Λογική τιμή"],["Undefined","undefined","Χωρίς τιμή"],["Null","null","Σκόπιμα κενό"],["BigInt","9007199254740993n","Μεγάλοι ακέραιοι"],["Symbol",'Symbol("id")',"Μοναδικό αναγνωριστικό"],["Object","{}, [], function","Σύνθετα δεδομένα"]
+    ];
+    const samples=[
+      {label:"Dynamic typing",code:'let x = 10;\nconsole.log(x, typeof x);\n\nx = "John";\nconsole.log(x, typeof x);'},
+      {label:"Primitive types",code:'const name = "Maria";\nconst age = 25;\nconst active = true;\nconst empty = null;\nlet missing;\nconst id = 10n;\nconst key = Symbol("id");\n\nconsole.log(typeof name);\nconsole.log(typeof age);\nconsole.log(typeof active);\nconsole.log(typeof empty);\nconsole.log(typeof missing);\nconsole.log(typeof id);\nconsole.log(typeof key);'},
+      {label:"Objects & arrays",code:'const user = { name: "Nikos", age: 30 };\nconst colors = ["red", "green", "blue"];\nconst greet = () => "Hello!";\n\nconsole.log(typeof user);\nconsole.log(typeof colors, Array.isArray(colors));\nconsole.log(typeof greet);'}
+    ];
+    const $=id=>document.getElementById(id);
+    const code=$("code"),output=$("output"),question=$("question"),answer=$("answer"),lineCount=$("lineCount");
+
+    $("types").innerHTML=typeData.map(([name,example,description])=>`<article class="type-card"><h3>${name}</h3><code>${escapeHtml(example)}</code><p>${description}</p></article>`).join("");
+    samples.forEach((sample,index)=>{const button=document.createElement("button");button.className="btn";button.textContent=sample.label;button.onclick=()=>loadSample(index);$("samples").appendChild(button)});
+    ["array","object","list"].forEach(choice=>{const button=document.createElement("button");button.className="quiz-option";button.textContent=choice;button.onclick=()=>checkQuiz(choice,button);$("quizOptions").appendChild(button)});
+
+    function escapeHtml(value){return value.replace(/[&<>"']/g,char=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"})[char])}
+    function updateLines(){const count=code.value.split("\n").length;lineCount.textContent=count+(count===1?" γραμμή":" γραμμές")}
+    function loadSample(index){code.value=samples[index].code;output.textContent="Έτοιμο για εκτέλεση.";updateLines()}
+    function formatValue(value){if(typeof value==="string")return value;if(typeof value==="bigint")return value+"n";if(typeof value==="symbol")return value.toString();if(typeof value==="undefined")return "undefined";if(typeof value==="function")return value.toString();try{return JSON.stringify(value)}catch{return String(value)}}
+    function runCode(){const logs=[];const localConsole={log:(...args)=>logs.push(args.map(formatValue).join(" ")),warn:(...args)=>logs.push("Προειδοποίηση: "+args.map(formatValue).join(" ")),error:(...args)=>logs.push("Σφάλμα: "+args.map(formatValue).join(" "))};try{new Function("console",'"use strict";\n'+code.value)(localConsole);output.textContent=logs.length?logs.join("\n"):"✓ Ο κώδικας εκτελέστηκε χωρίς output."}catch(error){output.textContent="Σφάλμα: "+error.message}}
+    function tutorReply(text){const q=text.toLocaleLowerCase("el").trim();if(!q)return"Γράψε μια ερώτηση για τους τύπους δεδομένων της JavaScript.";if(q.includes("dynamic")||q.includes("δυναμ"))return"Η JavaScript είναι δυναμικά τυποποιημένη. Ο τύπος συνδέεται με την τρέχουσα τιμή και όχι μόνιμα με τη μεταβλητή. Έτσι, το x μπορεί να κρατά πρώτα number και μετά string.";if(q.includes("null"))return'Το null δηλώνει σκόπιμη απουσία τιμής. Το typeof null επιστρέφει "object". Για ακριβή έλεγχο χρησιμοποίησε value === null.';if(q.includes("array")||q.includes("πίνακ"))return'Οι πίνακες είναι ειδικά objects. Το typeof [] επιστρέφει "object", επομένως για έλεγχο πίνακα χρησιμοποίησε Array.isArray(value).';if(q.includes("typeof"))return'Ο typeof επιστρέφει συμβολοσειρά όπως "number", "string", "boolean", "undefined", "bigint", "symbol", "object" ή "function".';if(q.includes("let")||q.includes("μεταβλητ")||q.includes("ίδια"))return'Δήλωσε τη μεταβλητή μία φορά: let x = 10; και μετά άλλαξε την τιμή με x = "John";. Το δεύτερο let x στο ίδιο scope προκαλεί SyntaxError.';if(q.includes("number")||q.includes("αριθ"))return"Ο τύπος Number περιλαμβάνει ακέραιους, δεκαδικούς, Infinity και NaN. Μπορείς να ελέγξεις μια τιμή με typeof value === 'number'.";if(q.includes("string")||q.includes("κείμεν"))return"Το String αποθηκεύει κείμενο και γράφεται με μονά, διπλά ή backtick εισαγωγικά. Τα backticks υποστηρίζουν template literals.";return'Δοκίμασε να ρωτήσεις: «Τι κάνει το typeof;», «Γιατί typeof null είναι object;» ή «Πώς ελέγχω αν μια τιμή είναι array;».'}
+    function askTutor(){answer.textContent=tutorReply(question.value);question.value="";question.focus()}
+    function checkQuiz(choice,selected){document.querySelectorAll(".quiz-option").forEach(button=>button.classList.remove("correct","wrong"));selected.classList.add(choice==="object"?"correct":"wrong");selected.textContent=choice+(choice==="object"?"  ✓":"  ✕");$("quizFeedback").textContent=choice==="object"?"Σωστά! Για ακριβή έλεγχο πίνακα χρησιμοποίησε Array.isArray(value).":"Όχι ακριβώς. Οι πίνακες ανήκουν στην κατηγορία object."}
+
+    $("runBtn").onclick=runCode;$("resetBtn").onclick=()=>loadSample(0);$("copyBtn").onclick=async()=>{try{await navigator.clipboard.writeText(code.value);$("copyBtn").textContent="✓ Αντιγράφηκε";setTimeout(()=>$("copyBtn").textContent="▣ Αντιγραφή",1500)}catch{output.textContent="Η αντιγραφή δεν επιτρέπεται από τον browser. Επίλεξε τον κώδικα και πάτησε Ctrl+C."}};$("askBtn").onclick=askTutor;question.addEventListener("keydown",event=>{if(event.key==="Enter"&&!event.shiftKey){event.preventDefault();askTutor()}});code.addEventListener("input",updateLines);code.addEventListener("keydown",event=>{if(event.key==="Tab"){event.preventDefault();const start=code.selectionStart,end=code.selectionEnd;code.value=code.value.substring(0,start)+"  "+code.value.substring(end);code.selectionStart=code.selectionEnd=start+2;updateLines()}});
+    loadSample(0);
+  </script>
+</body>
+</html>
